@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="密码"
+        app:layout_constraintBottom_toBottomOf="@+id/text_password"
+        app:layout_constraintEnd_toStartOf="@+id/text_password"
+        app:layout_constraintTop_toTopOf="@+id/text_password" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="邮箱"
+        app:layout_constraintBottom_toBottomOf="@+id/text_tEmail"
+        app:layout_constraintEnd_toStartOf="@+id/text_tEmail"
+        app:layout_constraintTop_toTopOf="@+id/text_tEmail" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="学号"
+        app:layout_constraintBottom_toBottomOf="@+id/text_tno"
+        app:layout_constraintEnd_toStartOf="@+id/text_tno"
+        app:layout_constraintTop_toTopOf="@+id/text_tno" />
+
+    <EditText
+        android:id="@+id/text_tno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="2014217218"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/text_tname"
+        app:layout_constraintEnd_toEndOf="@+id/text_tname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_tname" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="姓名"
+        app:layout_constraintBottom_toBottomOf="@+id/text_tname"
+        app:layout_constraintEnd_toStartOf="@+id/text_tname"
+        app:layout_constraintTop_toTopOf="@+id/text_tname" />
+
+    <EditText
+        android:id="@+id/text_tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="小明"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/text_tEmail"
+        app:layout_constraintEnd_toEndOf="@+id/text_tEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/text_tEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="****@qq.com"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/text_password"
+        app:layout_constraintEnd_toEndOf="@+id/text_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_password" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="不少于6位数"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button_sure"
+        app:layout_constraintEnd_toEndOf="@+id/button_sure" />
+
+    <Button
+        android:id="@+id/button_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="确定"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <TextView
+        android:id="@+id/text_register_info"
+        android:layout_width="271dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_sure"
+        app:layout_constraintEnd_toEndOf="@+id/button_sure" />
+
+</android.support.constraint.ConstraintLayout>

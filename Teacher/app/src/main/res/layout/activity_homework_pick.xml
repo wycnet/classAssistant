@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeworkPickActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="发布作业"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_homework_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="题目"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_homework"
+        app:layout_constraintStart_toStartOf="@+id/text_homework" />
+
+    <EditText
+        android:id="@+id/text_homework"
+        android:layout_width="0dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/text_biankuang"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_file_url"
+        android:layout_width="352dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="文件路径"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_netFile"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <Button
+        android:id="@+id/button_localFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="本地文件"
+        app:layout_constraintBottom_toBottomOf="@+id/button_netFile"
+        app:layout_constraintStart_toEndOf="@+id/button_netFile"
+        app:layout_constraintTop_toTopOf="@+id/button_netFile"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="8dp"
+        android:text="添加附件"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_netFile"
+        app:layout_constraintEnd_toStartOf="@+id/button_netFile"
+        app:layout_constraintTop_toTopOf="@+id/button_netFile"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <Button
+        android:id="@+id/button_netFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="网络文件"
+        app:layout_constraintEnd_toEndOf="@+id/text_homework"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/text_homework"
+        app:layout_constraintTop_toBottomOf="@+id/text_homework" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_sendfile"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+
+        android:elevation="0dp"
+        android:max="100"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:text="确定"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_homework" />
+
+</android.support.constraint.ConstraintLayout>

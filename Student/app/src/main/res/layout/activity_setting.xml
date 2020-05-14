@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/email"
+            android:text="@string/nav_header_title"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/nav_header_subtitle"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="个人信息" />
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout
+            android:id="@+id/layout_sno"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="学号" />
+
+            <TextView
+                android:id="@+id/text_sno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout
+            android:id="@+id/layout_colloge"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="学院" />
+
+            <TextView
+                android:id="@+id/text_college"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout
+            android:id="@+id/layout_major"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="专业" />
+
+            <TextView
+                android:id="@+id/text_major"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="邮箱" />
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="密码" />
+
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="点击修改密码" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+
+        <Button
+            android:id="@+id/button_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccen"
+            android:onClick="onClick"
+            android:text="注销" />
+        <!-- 分割线 -->
+
+    </LinearLayout>
+
+
+</LinearLayout>

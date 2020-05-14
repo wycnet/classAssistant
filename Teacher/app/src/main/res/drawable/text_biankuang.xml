@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 指定圆角矩形的4个圆角半径 -->
+
+    <!-- 指定边框线条的宽度和颜色 -->
+    <stroke
+        android:width="3px"
+        android:color="#8f888f"
+        />
+</shape>
